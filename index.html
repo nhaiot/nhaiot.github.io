@@ -16,16 +16,32 @@
             <div>
                 <img id="title-image" style="width: 100%; z-index: 0;" src="Resource/XD/title-image.png">
             </div>
-            <!-- <div style="float: right;"> -->
-            <div style="width: 400px; position: absolute; margin-top: -360px; right: 5%;">
+
+            <div style="position: absolute; width: min(1000px, 100%); margin-top: -360px;">
+                <div style="position: relative;">
+                    <div style="float: right; width: 365px;">
+                        <!-- <div style="position: absolute; margin-left: 100px; margin-top: -240px;">
+                            <img style="position: absolute; height: 720px;" src="Resource/XD/phonemask.png">
+                            <img style="position: absolute; height: 720px;" src="Resource/XD/phonescreenmask.png">
+                        </div> -->
+                        <img style="height: 720px; z-index: 1; background-repeat: no-repeat;" src="Resource/XD/phonemask.png">
+                        <img style="margin-left: -365px; height: 720px; z-index: 2;" src="Resource/XD/screenshot/0.png">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div style="width: 400px; position: absolute; margin-top: -360px; right: 5%;">
                 <img style="height: 720px; z-index: 1; background-repeat: no-repeat;" src="Resource/XD/phonemask.png">
                 <img style="margin-left: -365px; height: 720px; z-index: 2;" src="Resource/XD/phonescreenmask.png">
-            </div>
+            </div> -->
+            
+
             <div>
                 
                 <div class="center" style="width: 380px; height: 64px; margin-top: 50px; position: relative;">
                     <img id="app-icon" class="center" style="margin-top: -128px; width: 128px;" src="Resource/XD/AppIcon.png">
-                    <div class="center"><h1 id="appname">Nha .io</h1></div>
+                    <div class="center"><h1 id="appname">Nha IO</h1></div>
                     
                     <!-- <div style="height: 32px;"></div> -->
                     <img id="ggpstore" style="left: 0px; height: 100%;" src="Resource/XD/googleplay-soon.png">
@@ -38,9 +54,10 @@
                 <img id="app-icon" style="position: absolute; left: 10px; top: 10px; height: 50px;" src="Resource/XD/AppIcon.png">
                 <button id="btn-main" class="button" style="margin-left: 10%;">Trang chính</button>
                 <button id="btn-shop" class="button">Sản phẩm</button>
+
+                <!-- <a href="pages/chinh-sach.html">
                 <button id="btn-privacy" class="button">Chính sách</button>
-                <!-- <img class="button" src="Resource/XD/btn-header.png">
-                <img class="button" src="Resource/XD/btn-header.png"> -->
+                </a> -->
             </div>
 
             <!-- content-light -->
@@ -53,15 +70,15 @@
                     <!-- <img id="imagedemo" style="height: 450px; z-index: 0;" src="Resource/XD/light-image-demo.png"> -->
                     <div id = "animateSceenshot" class="phone" style="margin-left: 100px; margin-top: -240px;">
                         <img src="Resource/XD/phonemask.png">
-                        <img id="screenshot-control-light" src="Resource/XD/phonescreenmask.png">
+                        <img id="screenshot-control-light" src="Resource/XD/screenshot/1.png">
                     </div>
 
                     <div style="width: 350px;"></div>
                 </div>
 
-                <div style="margin-top: 20px;">
+                <div class="text">
                     <div>
-                        <b>Công tắc tự động</b>
+                        <b>Công tắc điều khiển</b>
                         <ul>
                             <li>Dễ dàng điều khiển cấp điện cho tất cả đèn, thiết bị trong nhà qua phần mềm hoặc công tắc vật lý.</li>
                             <li>Tùy chọn tắt mở đèn, hẹn giờ.</li>
@@ -73,13 +90,11 @@
             </div>
 
             <!-- content-curtain -->
-            <div class="content" style="background-color: #EEEFE2;">
+            <!-- <div class="content" style="background-color: #EEEFE2;">
 
                 <div style="float: left; margin-top: 20px; margin-left: 20%;">
 
                     <div id="imagedemo" style="width: 339px; height: 440px; z-index: 0; background-image:url(Resource/XD/curtain-image-demo.png)"></div>
-
-                    <!-- <img id="imagedemo" style="height: 440px; z-index: 0;" src="Resource/XD/curtain-image-demo.png"> -->
 
                     <div id = "animateSceenshot" class="phone" style="margin-left: -50px; margin-top: -350px;">
                         <img src="Resource/XD/phonemask.png">
@@ -89,7 +104,7 @@
                     <div style="width: 400px;"></div>
                 </div>
 
-                <div style="margin-left: 50px; margin-top: 20px;">
+                <div class="text">
                     <div>
                         <b>Rèm tự động</b>
                         <ul>
@@ -100,7 +115,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- content-weather -->
             <div class="content" style="background-color: #E2ECEF;">
@@ -112,14 +127,14 @@
 
                     <div id = "animateSceenshot" class="tablet" style="margin-left: -50px; margin-top: -200px;">
                         <img src="Resource/XD/tabletmask.png">
-                        <img id="screenshot-view-weather" src="Resource/XD/tabletscreenmask.png">
+                        <img id="screenshot-view-weather" src="Resource/XD/screenshot/2.png">
                     </div>
 
                 </div>
 
-                <div style="margin-left: 50px; margin-top: 20px;">
+                <div class="text">
                     <div>
-                        <b>Hiển thị hiệu ứng thời tiết tại vị trí căn nhà</b>
+                        <b>Hiển thị thời tiết tại vị trí căn nhà</b>
                         <ul>
                             <li>Phần mềm hiển thị hiệu ứng 3d thời gian thực dựa theo dự báo thời tiết như: ngày, đêm, mưa, sương mù, sấm chớp,...</li>
                         </ul>
@@ -137,11 +152,11 @@
                     <!-- <img id="imagedemo" style="height: 440px; z-index: 0;" src="Resource/XD/usermanager-image-demo.png"> -->
                     <div id = "animateSceenshot" class="tablet" style="margin-left: 450px; margin-top: -200px;">
                         <img src="Resource/XD/tabletmask.png">
-                        <img id="screenshot-manager-users" src="Resource/XD/tabletscreenmask.png">
+                        <img id="screenshot-manager-users" src="Resource/XD/screenshot/3.png">
                     </div>
                 </div>
 
-                <div style=" margin-top: 20px;">
+                <div class="text">
                     <div>
                         <b>Quản lý tài khoản</b>
                         <ul>
@@ -164,7 +179,7 @@
                     <div style="width: 400px;"></div>
                 </div>
 
-                <div style="margin-top: 20px;">
+                <div class="text">
                     <div>
                         <b>Điều khiển thiết bị qua giọng nói</b>
                         <ul>
@@ -183,7 +198,7 @@
 
                 <div style="float: right; margin-top: 20px; margin-right: 5%;">
                     <img style="margin-left: 0px; margin-bottom: 0px; height: 360px;" src="Resource/XD/laptopmask.png">
-                    <img id="screenshot-control-editor" style="position: absolute; margin-left: -540px; margin-bottom: 0px; height: 360px;" src="Resource/XD/laptopscreenmask.png">
+                    <img id="screenshot-control-editor" style="position: absolute; margin-left: -540px; margin-bottom: 0px; height: 360px;" src="Resource/XD/screenshot/4.png">
 
                 </div>
 
@@ -191,8 +206,8 @@
                     <div>
                         <b>Tự do chỉnh sửa</b>
                         <ul>
-                            <li>Phần mềm riếng biết giúp chủ căn nhà có thể thêm, xóa thiết bị trong phần mềm không cần hỗ trợ.</li>
-                            <li>Chỉnh sửa thiết bị, nội thất mô phỏng, màu sắc cho căn nhà 3d</li>
+                            <li>Phần mềm riếng biết giúp chủ căn nhà có thể trực tiếp thêm, xóa thiết bị trong căn nhà mô phỏng.</li>
+                            <li>Phần mềm hỗ trợ chỉnh sửa thiết bị, nội thất mô phỏng, màu sắc cho căn nhà 3D.</li>
                         </ul>
                     </div>
                 </div>
@@ -239,7 +254,7 @@
                 <div style="height: px;"></div>
             </div>
             <div>
-                <img style="position: absolute; margin-top: -1px; width: 90%; height: 50px; z-index: 1;" src="Resource/XD/items-top-blur.png">
+                <img style="position: absolute; margin-top: -1px; width: min(1000px, 100%); height: 50px; z-index: 1;" src="Resource/XD/items-top-blur.png">
             </div>
 
 
@@ -252,20 +267,98 @@
                 </div>
                 <div class="scrollshop">
                     <div style="width: 50px; flex-shrink: 0;"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
-                    <div class="item"></div>
+
+                    <div class="item">
+                        <div class="img"></div>
+                        <div class="info">
+                            <p><b>Gói thiết kế nhà 3D</b></p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Mô phỏng căn nhà của bạn gần với thực tế.
+                                    </li>
+                                    <li>
+                                        Hỗ trợ 5 năm.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div style="margin-left: 50px; margin-top: 7px;">
+                            <button>
+                                <p class="new" style="margin-top: 15px;">Liên hệ</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img"></div>
+                        <div class="info">
+                            <p><b>Relays Wifi 4</b></p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Công tắc điều khiển 4 thiết bị.
+                                    </li>
+                                    <li>
+                                        Bảo hành 12 tháng.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div style="margin-left: 50px;">
+                            <button>
+                                <p class="old">499.000 vnd</p>
+                                <p class="new">439.000 vnd</p>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="img"></div>
+                        <div class="info">
+                            <p><b>Relays Wifi 8</b></p>
+                            <p>
+                                <ul>
+                                    <li>
+                                        Công tắc điều khiển 8 thiết bị.
+                                    </li>
+                                    <li>
+                                        Bảo hành 12 tháng.
+                                    </li>
+                                </ul>
+                            </p>
+                        </div>
+                        <div style="margin-left: 50px;">
+                            <button>
+                                <p class="old">749.000 vnd</p>
+                                <p class="new">659.000 vnd</p>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="item"></div> -->
+
+
                     <div style="width: 65px; flex-shrink: 0;"></div>
                 </div>
                 <div style="height: 50px;"></div>
             </div>
             <!-- bottom -->
             <div>
-                <img style="position: absolute; margin-top: -49px; width: 90%; height: 50px;" src="Resource/XD/items-bottom-blur.png">
+                <img style="position: absolute; margin-top: -49px; width: min(1000px, 100%); height: 50px;" src="Resource/XD/items-bottom-blur.png">
             </div>
-            <div id="bottom" style="height: 300px;"></div>
-
+            
+            <div id="bottom" style="height: 200px;">
+                <div style="height: 125px;"></div>
+                <div style="margin-left: 50px;">
+                    <p>
+                        @2020 Nha IO &nbsp;&nbsp;&nbsp;
+                        <a href="pages/dieu-khoan-su-dung.html">Điều khoản</a>
+                        &nbsp;&nbsp;&nbsp;
+                        <a href="pages/chinh-sach-rieng-tu.html">Chính sách riêng tư</a>
+                    </p>
+                </div>
+            </div>
         </div>
         <!-- <script src="lib/jquery.min.js"></script> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>

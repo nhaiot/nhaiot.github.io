@@ -28,7 +28,7 @@ body{
     margin: 0px;
     padding: 0px;
     /* background: rgb(228, 228, 228); */
-    background-image: url('../Resource/XD/bg-dot-dark.png');
+    background-image: url('../Resource/XD/bg-dot-light.png');
     background-size: 256px;
     border: none;
     color: rgb(58, 58, 58);
@@ -42,7 +42,8 @@ body blog-title {
 }
 
 #view{
-    width: 90%;
+    width: min(1000px, 100%);
+    /* width: 90%; */
     margin: 0 auto;
     background: #ffffff;
 }
@@ -57,7 +58,7 @@ body blog-title {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     /* filter:blur(3px); */
     /* position: relative; */
 }
@@ -83,8 +84,23 @@ body blog-title {
 
 #bottom {
     background-color:#0A0E0F;
-    color: white;
+    font-size: 18px;
+    color:rgb(126, 126, 126);
     width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
+
+#bottom a {
+    text-decoration:none;
+    color:rgb(126, 126, 126);
+}
+
+#bottom a:hover {
+    /* background-color: slategray; */
+    text-decoration:underline;
+    color:cornflowerblue;
 }
 
 .center {
@@ -99,6 +115,13 @@ body blog-title {
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+}
+
+.content .text {
+    /* width: 95%; */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
 }
 
 .content #imagedemo {
@@ -152,4 +175,45 @@ div.scrollshop .item {
     margin-bottom: 15px;
     font-size: 20px;
     flex-shrink: 0;
+}
+
+div.scrollshop .item button{
+    outline : 0;
+    -moz-outline : 0;
+    border: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    /* margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px; */
+    font-size: 20px;
+    color: white;
+    background-color: rgb(16, 116, 231);
+}
+
+div.scrollshop .item .img{
+    height: 175px;
+}
+
+div.scrollshop .item .info{
+    left: 5px;
+    height: 150px; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    position: relative;
+    /* background-color: rgb(246, 248, 250); */
+}
+
+div.scrollshop .item button .old{
+    margin-top: -1px;
+    text-decoration: line-through;
+    color: rgb(134, 63, 63);
+    font-size: 14px;
+}
+
+div.scrollshop .item button .new{
+    margin-top: -10px;
+    color: white;
+    font-size: 20px;
 }

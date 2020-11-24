@@ -36,7 +36,7 @@ window.onresize = function() {
 
 window.onscroll = function(){
     onchangeview();
-    scrollimageeffect();
+    //scrollimageeffect();
 };
 
 var onchangeview = function() {
@@ -98,7 +98,7 @@ $("#btn-shop").click(function() {
 });
 
 $("#btn-privacy").click(function() {
-
+    
 });
 
 var update = setInterval(function() {
