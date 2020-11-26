@@ -94,7 +94,7 @@ $("#btn-main").click(function(){
 });
 
 $("#btn-shop").click(function() {
-    window.scrollTo(0, $("#item-shop").position().top - 150);
+    window.scrollTo(0, $("#item-shop").position().top - 50);
 });
 
 $("#btn-privacy").click(function() {
@@ -146,3 +146,11 @@ var lerp = function(a, b, f)
 var clamp = function clamp(num, min, max) {
     return num <= min ? min : num >= max ? max : num;
 }
+
+var setcontentcolor = function(color) {
+    $(".content").css({'background-color' : color});
+}
+
+$("#app-icon").click(function() {
+    setcontentcolor('white');
+});

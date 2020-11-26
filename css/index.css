@@ -15,13 +15,13 @@
 
 
 #appname {
-    color: rgb(29, 29, 29);
+    color: black;
     text-align: center;
     font-family: 'Alatsi';
 }
 
-.content #title {
-    color: rgb(122, 104, 104);
+#app-icon {
+    border-radius: 20px;
 }
 
 body{
@@ -45,7 +45,16 @@ body blog-title {
     width: min(1000px, 100%);
     /* width: 90%; */
     margin: 0 auto;
-    background: #ffffff;
+    /* background: #ffffff; */
+}
+
+#title-image {
+    box-shadow: 5px 0px 10px rgb(175, 175, 175);
+}
+
+#top {
+    background-color:white;
+    box-shadow: 5px 10px 10px rgb(175, 175, 175);
 }
 
 #header{
@@ -53,14 +62,19 @@ body blog-title {
     /* height: 70px; */
     margin: 0 auto;
     /* background-color: #3D3223; */
-    background-color: #CCCBD1;
-    opacity: 0.9;
+    background-color: white;
+    /* opacity: 0.9; */
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top: 0;
+    top: -1px;
     z-index: 5;
     /* filter:blur(3px); */
     /* position: relative; */
+
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+
+    box-shadow: 5px 10px 10px rgb(175, 175, 175);
 }
 
 #header .button {
@@ -78,7 +92,7 @@ body blog-title {
 }
 
 #header .button:hover {
-    background-color: slategray;
+    background-color: #1c1e20;
     color: white;
 }
 
@@ -90,6 +104,7 @@ body blog-title {
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+    box-shadow: 5px 10px 10px rgb(175, 175, 175);
 }
 
 #bottom a {
@@ -109,12 +124,31 @@ body blog-title {
     margin-right: auto;
 }
 
+.space {
+    height: 50px;
+}
+
 .content {
     width: 100%;
     /* height: 450px; */
     overflow: hidden;
     margin: 0 auto;
     position: relative;
+    border-radius: 25px;
+    box-shadow: 5px 10px 10px rgb(175, 175, 175);
+}
+
+.content1 {
+    width: 100%;
+    /* height: 450px; */
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 5px 10px 10px rgb(175, 175, 175);
+}
+
+.content #title {
+    color: rgb(122, 104, 104);
 }
 
 .content .text {
